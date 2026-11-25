@@ -1,31 +1,41 @@
-# Limpieza y Validación de Datos de Clientes con SQL Server
+# 🧹 Limpieza y Validación de Datos de Clientes con SQL Server
 
-## Descripción del proyecto
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL%20Server-T--SQL-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white" />
+  <img src="https://img.shields.io/badge/Data-Cleaning-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+</p>
 
-Proyecto práctico de limpieza y validación de una base de datos de clientes utilizando Microsoft SQL Server y T-SQL.
+## 📌 Descripción del proyecto
 
-Se trabajó con un conjunto de 15 registros que contenían distintos problemas de calidad de datos, con el objetivo de identificar inconsistencias, corregir errores y preparar la información para su posterior análisis.
+Proyecto práctico de limpieza, transformación y validación de una base de datos de clientes utilizando **Microsoft SQL Server** y **T-SQL**.
 
-## Herramientas utilizadas
+Se trabajó con un conjunto de 15 registros que contenían diferentes problemas de calidad de datos. El objetivo fue identificar inconsistencias, corregir errores y preparar la información para su posterior análisis.
 
-- Microsoft SQL Server
-- SQL Server Management Studio (SSMS)
-- Lenguaje SQL (T-SQL)
+## 🛠️ Herramientas utilizadas
 
-## Proceso realizado
+- 🗄️ Microsoft SQL Server
+- 💻 SQL Server Management Studio (SSMS)
+- 🔹 Lenguaje SQL (T-SQL)
 
-1. Creación de la base de datos y tabla de clientes.
-2. Inserción de datos de prueba con inconsistencias.
-3. Creación de una copia de trabajo para preservar los datos originales.
-4. Diagnóstico de registros duplicados.
-5. Limpieza de nombres y ciudades.
-6. Validación de direcciones de correo electrónico.
-7. Limpieza y validación de edades.
-8. Normalización y conversión de fechas.
-9. Identificación de valores faltantes (`NULL`).
-10. Verificación final de la calidad de los datos.
+## 🔍 Proceso de trabajo
 
-## Problemas detectados
+El proyecto se desarrolló en diferentes etapas:
+
+1. 🏗️ Creación de la base de datos y tabla de clientes.
+2. 📥 Inserción de datos de prueba con inconsistencias.
+3. 💾 Creación de una copia de trabajo para preservar los datos originales.
+4. 🔎 Diagnóstico de registros duplicados.
+5. 🧹 Limpieza de nombres y ciudades.
+6. 📧 Validación de direcciones de correo electrónico.
+7. 🔢 Limpieza y validación de edades.
+8. 📅 Normalización y conversión de fechas.
+9. ⚠️ Identificación de valores faltantes (`NULL`).
+10. ✅ Verificación final de la calidad de los datos.
+
+## 🚩 Problemas de calidad detectados
+
+Durante el diagnóstico se identificaron:
 
 - Espacios en blanco innecesarios.
 - Diferencias en mayúsculas y minúsculas.
@@ -35,19 +45,40 @@ Se trabajó con un conjunto de 15 registros que contenían distintos problemas d
 - Fechas inválidas.
 - Campos con valores nulos o vacíos.
 
-## Resultados
+## 📊 Resultados obtenidos
 
-- 15 registros originales conservados.
-- No se detectaron registros duplicados.
+| Indicador | Resultado |
+|---|---:|
+| Registros originales | 15 |
+| Registros finales | 15 |
+| Registros duplicados | 0 |
+| Nombres faltantes | 2 |
+| Emails faltantes | 5 |
+| Ciudades faltantes | 1 |
+| Edades faltantes | 3 |
+| Fechas faltantes | 3 |
+
+### ✨ Principales mejoras
+
+- Se conservaron los 15 registros originales.
 - Se corrigieron inconsistencias en los campos de texto.
-- Se validaron edades y fechas.
+- Se validaron los formatos de correo electrónico.
+- Se normalizaron las fechas y se creó una columna de tipo `DATE`.
 - Se identificaron los valores faltantes sin inventar información.
-- Se conservó la tabla original para mantener la trazabilidad.
+- Se mantuvo la tabla original para garantizar la trazabilidad del proceso.
 
-## Archivos del proyecto
+## 📂 Archivo del proyecto
 
-- `Limpieza_Clientes_SQL_Server.sql`: contiene las consultas SQL utilizadas durante el proceso de limpieza y validación.
+📄 `Limpieza_Clientes_SQL_Server.sql`
 
-## Objetivo de aprendizaje
+Contiene las consultas SQL utilizadas durante las distintas etapas de diagnóstico, limpieza y validación.
 
-Aplicar técnicas de limpieza, transformación y validación de datos mediante SQL Server, desarrollando buenas prácticas de trabajo con bases de datos.
+## 🎯 Objetivo de aprendizaje
+
+Aplicar técnicas de limpieza, transformación y validación de datos mediante SQL Server, incorporando buenas prácticas de trabajo con bases de datos y fortaleciendo habilidades para el análisis de datos.
+
+---
+
+<p align="center">
+  💻 Proyecto desarrollado como práctica de análisis y calidad de datos - Gladys Ramos 
+</p>
